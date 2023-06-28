@@ -1,3 +1,4 @@
+//This function has been modified to use const and let instead of var
 export function taskFirst() {
   const task = 'I prefer const when I can.';
   return task;
