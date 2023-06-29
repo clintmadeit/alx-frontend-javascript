@@ -1,7 +1,8 @@
 export default class ClassRoom {
-    constructor(_maxStudentsSize) {
-        {this.maxStudentsSize > 0 ? this._maxStudentsSize = _maxStudentsSize : this._maxStudentsSize = 0;}
-        this.maxStudentsSize = _maxStudentsSize;
+    constructor(_maxStudentsSize, teacher, roomNumber) {
+        this.name = _maxStudentsSize;
+        this.name = teacher;
+        this.name = roomNumber;
     }   
 }
-console.log(ClassRoom.name);
+console.log(_maxStudentsSize.name);
