@@ -3,4 +3,4 @@ export default class ClassRoom {
         this._maxStudentsSize = maxStudentsSize;
     }
 }
-console.log(ClassRoom.name);
+console.log(ClassRoom.room);
