@@ -1,14 +1,10 @@
-/* Complete the function cleanSet that takes a Set and a string 
-as arguments and returns a string.*/
-export default function cleanSet(set, startString) {
-  if (typeof startString !== 'string' || startString.length === 0) {
+/* eslint-disable array-callback-return */
+export default function cleanSet(set, string) {
+  if (string === undefined || string.length === 0) {
     return '';
   }
-  const result = [];
-  for (const item of set) {
-    if (item && item.startsWith(startString)) {
-      result.push(item.slice(startString.length));
-    }
-  }
-  return result.join('-');
+  return [...set]
+    .filter((str) => (str !== undefined ? str.startsWith(string) : ''))
+    .map((str) => (str !== undefined ? str.slice(string.length) : ''))
+    .join('-');
 }
